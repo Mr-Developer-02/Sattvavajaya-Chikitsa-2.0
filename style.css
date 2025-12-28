@@ -1502,7 +1502,7 @@ span.price-tick {
           display: flex;
           align-items: flex-start;
           gap: 20px;
-          height: 200px;
+          height: auto;
           margin-bottom: 2rem;
           padding: 25px;
           background: #fff;
