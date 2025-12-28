@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Sattvavajaya Chikitsa | Meditation & Counseling</title>
+    <meta name="description" content="Holistic mental wellness through meditation therapy, counseling, and mindfulness practices based on Ayurvedic Sattvavajaya Chikitsa">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <!-- Your existing header goes here -->
+    <header id="header" style="min-height:80px;display:flex;align-items:center;position:fixed;top:0;left:0;width:100%;z-index:1050;background:#fff;box-shadow:0 2px 12px rgba(8,70,78,0.07);">
+        <nav id="primary-header" class="navbar navbar-expand-lg bg-white p-3" aria-label="navbar"
+          style="width:100%;padding: 0 !important; ">
+          <div class="container d-flex align-items-center justify-content-between" style="gap:0.5rem;min-height:64px;">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" style="min-width:0;">
+              <img src="images/logo.png" class="logo" alt="Sattvavajaya Chikitsa Logo"
+                style="max-width:200px; height:90px;">
+            </a>
+            <button class="navbar-toggler ms-2 order-lg-2 d-flex align-items-center d-lg-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbar-primary" aria-controls="navbar-primary"
+              aria-expanded="false" aria-label="Toggle navigation"
+              style="border:none; background:transparent; box-shadow:none; padding:0.25rem 0.5rem; display:flex; align-items:center; position:relative;">
+              <span class="navbar-toggler-icon" style="width:2rem;height:2rem;display:block;"></span>
+              <span class="navbar-close-icon"
+                style="display:none;width:2rem;height:2rem;align-items:center;justify-content:center;">
+                <!-- SVG for close (X) icon -->
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <line x1="8" y1="8" x2="24" y2="24" stroke="#1CBCCF" stroke-width="3" stroke-linecap="round" />
+                  <line x1="24" y1="8" x2="8" y2="24" stroke="#1CBCCF" stroke-width="3" stroke-linecap="round" />
+                </svg>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-1" id="navbar-primary">
+              <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+                <li class="nav-item ">
+                  <a class="nav-link text-dark" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark active" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                                <a class="nav-link text-dark" href="service.html">Services</a>
+
+                </li>
+             <!-- <li class="nav-item">
+                  <a class="nav-link text-dark" href="#book-appointment">Gallery</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="contact.html">Contact</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link text-dark" href="#faqs">Faqs</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <!-- Bootstrap CSS/JS for toggler functionality -->
+    
+        <script>
+          // Fix toggler icon color to match the image (blue)
+          document.addEventListener("DOMContentLoaded", function () {
+            var toggler = document.querySelector('.navbar-toggler');
+            var togglerIcon = document.querySelector('.navbar-toggler-icon');
+            var closeIcon = document.querySelector('.navbar-close-icon');
+            var navbarCollapse = document.getElementById('navbar-primary');
+    
+            if (togglerIcon) {
+              togglerIcon.style.backgroundImage =
+                "url('data:image/svg+xml;utf8,<svg viewBox=\"0 0 30 30\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke=\"%231CBCCF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" d=\"M4 7h22M4 15h22M4 23h22\"/></svg>')";
+              togglerIcon.style.backgroundRepeat = "no-repeat";
+              togglerIcon.style.backgroundPosition = "center";
+              togglerIcon.style.backgroundSize = "2rem 2rem";
+            }
+    
+            // Toggle open/close icon
+            if (toggler && togglerIcon && closeIcon && navbarCollapse) {
+              toggler.addEventListener('click', function () {
+                setTimeout(function () {
+                  var isOpen = navbarCollapse.classList.contains('show');
+                  if (isOpen) {
+                    togglerIcon.style.display = "none";
+                    closeIcon.style.display = "flex";
+                  } else {
+                    togglerIcon.style.display = "block";
+                    closeIcon.style.display = "none";
+                  }
+                }, 200); // Wait for collapse animation
+              });
+    
+              // Also handle closing when nav is closed by clicking outside or link
+              navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+                togglerIcon.style.display = "block";
+                closeIcon.style.display = "none";
+              });
+              navbarCollapse.addEventListener('shown.bs.collapse', function () {
+                togglerIcon.style.display = "none";
+                closeIcon.style.display = "flex";
+              });
+            }
+          });
+        </script>
+        <style>
+          .navbar-close-icon {
+            cursor: pointer;
+          }
+          /* Make sure page content is not hidden under the fixed header */
+          body {
+            padding-top: 100px;
+          }
+          @media (max-width: 600px) {
+            body {
+              padding-top: 80px;
+            }
+          }
+          @media (max-width: 400px) {
+            body {
+              padding-top: 70px;
+            }
+          }
+        </style>
+      </header>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Healing Services</h1>
+                <p class="subtitle">Meditation, Counseling & Dhyan for Mental Peace and Emotional Balance</p>
+                <p>Experience holistic mental wellness through ancient Ayurvedic wisdom combined with modern therapeutic practices. Our personalized approach helps you achieve inner peace, emotional balance, and sustainable well-being.</p>
+                <a href="contact.html" class="btn-primary-custom">Book a Session</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Services</h2>
+                <p>Comprehensive healing solutions tailored to your unique journey</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Meditation Therapy</h3>
+                        <p>Guided meditation practices incorporating breath awareness, mindfulness, and relaxation techniques designed to reduce stress, calm the mind, and restore inner balance through ancient wisdom.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Counseling & Emotional Healing</h3>
+                        <p>Professional support for anxiety, stress, overthinking, and emotional challenges. We provide a safe, compassionate space to process emotions and develop healthy coping strategies for lasting balance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-om"></i>
+                        </div>
+                        <h3>Dhyan (Mindfulness Practice)</h3>
+                        <p>Deep awareness and concentration practices that cultivate inner clarity, self-discipline, and mental strength. Develop mindfulness skills that transform your daily life and enhance spiritual growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Our Approach</h2>
+                <p>Rooted in ancient wisdom, designed for modern life</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Ayurveda-Based Sattvavajaya Chikitsa</h4>
+                            <p>Our methods are rooted in the time-tested principles of Ayurvedic psychology, focusing on mental purification and emotional regulation through natural, holistic practices.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Personalized Guidance</h4>
+                            <p>Every individual is unique. We create customized healing plans that address your specific needs, lifestyle, and mental health goals with compassionate, one-on-one support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Natural & Drug-Free Mental Healing</h4>
+                            <p>Experience the power of natural healing without dependency on medications. Our approach strengthens your innate capacity for mental wellness and emotional resilience.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Sustainable Lifestyle Practices</h4>
+                            <p>Learn practical tools and daily routines (Dinacharya) that integrate seamlessly into your life, creating lasting positive changes that support long-term mental and emotional health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Transform Your Life</h2>
+                <p>Experience profound benefits through our holistic approach</p>
+            </div>
+            <section id="about-us" >
+                <div class="container">
+            
+                  <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="icon-box p-4 text-center h-100 shadow-sm bg-white rounded-4">
+                        <div class="icon-box-icon mb-3">
+                          <img src="./images/clarity.png" alt="Inner Peace &amp; Clarity" class="img-fluid" style="max-width: 70px;">
+                        </div>
+                        <div class="icon-box-content">
+                          <h3 class="card-title py-2 fs-5 fw-semibold text-dark">Inner Peace &amp; Clarity</h3>
+                          <p class="mb-0 text-secondary">Quiet the noise within and reconnect with your true self.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="icon-box p-4 text-center h-100 shadow-sm bg-white rounded-4">
+                        <div class="icon-box-icon mb-3">
+                          <img src="./images/emotional-balance.png" alt="Emotional Balance" class="img-fluid" style="max-width: 70px;">
+                        </div>
+                        <div class="icon-box-content">
+                          <h3 class="card-title py-2 fs-5 fw-semibold text-dark">Emotional Balance</h3>
+                          <p class="mb-0 text-secondary">Build resilience against stress, anxiety, and negativity.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="icon-box p-4 text-center h-100 shadow-sm bg-white rounded-4">
+                        <div class="icon-box-icon mb-3">
+                          <img src="./images/peace.png" alt="Holistic Well-being" class="img-fluid" style="max-width: 70px;">
+                        </div>
+                        <div class="icon-box-content">
+                          <h3 class="card-title py-2 fs-5 fw-semibold text-dark">Holistic Well-being</h3>
+                          <p class="mb-0 text-secondary">Heal not just the body, but the mind and spirit together.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="icon-box p-4 text-center h-100 shadow-sm bg-white rounded-4">
+                        <div class="icon-box-icon mb-3">
+                          <img src="./images/sustainable.png" alt="Sustainable Lifestyle" class="img-fluid" style="max-width: 70px;">
+                        </div>
+                        <div class="icon-box-content">
+                          <h3 class="card-title py-2 fs-5 fw-semibold text-dark">Sustainable Lifestyle</h3>
+                          <p class="mb-0 text-secondary">Learn mindful routines that bring lasting harmony.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+           
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Begin Your Journey Towards Mental Peace</h2>
+                <p>Take the first step towards a calmer, more balanced life. Our compassionate team is here to guide you every step of the way.</p>
+                <a href="contact.html" class="btn-light-custom">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="overflow-hidden padding-large pb-0"
+    style="background: linear-gradient(135deg, #e8f0f1 0%, #f8fafc 100%); border-top: 2px solid #1CBCCF;">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between">
+        <!-- 1st Column: Logo & Text -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+          <div class="footer-menu">
+            <a href="/" style="display:inline-block;">
+              <img src="images/logo-bg.png" alt="Sattvavajaya Chikitsa Logo" class="pb-3" style="max-width:180px;">
+            </a>
+            <p class="mb-3" style="color:#4C5354;">Sattvavajaya Chikitsa - Mind-Body Wellness in Pune. Learn more about our philosophy, team, and approach to holistic health.</p>
+          </div>
+        </div>
+        <!-- 2nd Column: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-sm-12 pb-4">
+          <div class="footer-menu">
+            <h5 class="widget-title pb-2 fw-semibold" style="color:#1CBCCF;">Quick Links</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="pb-2"><a href="/" style="color:#333; text-decoration:none;">Home</a></li>
+              <li class="pb-2"><a href="about.html" style="color:#333; text-decoration:none;">About Us</a></li>
+              <li class="pb-2"><a href="service.html" style="color:#333; text-decoration:none;">Services</a></li>
+              
+              <li class="pb-2"><a href="contact.html" style="color:#333; text-decoration:none;">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 3rd Column: Both Addresses -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+          <div class="footer-menu">
+            <h5 class="widget-title fw-semibold" style="color:#1CBCCF;">Our Locations</h5>
+            <div class="mb-3">
+              <p class="mb-1 fw-semibold" style="color:#333;">Amrut Hospital and Research Centre</p>
+              <p class="mb-1" style="color:#4C5354;">
+                Markal Road, Alandi Devachi,<br>
+                Tal-Khed, Dist-Pune 412105.
+              </p>
+              <p class="mb-1" style="color:#4C5354;">
+                10:00 am - 4:00 pm
+              </p>
+            </div>
+             <!-- <div>
+              <p class="mb-1 fw-semibold" style="color:#333;">Institute for Nature Cure and Yogic Sciences</p>
+              <p class="mb-1" style="color:#4C5354;">
+                Pune - Nashik Hwy, near Blind School Premises,<br>
+                Bhosari, Pimpri-Chinchwad,<br>
+                Maharashtra 411039
+              </p>
+              <p class="mb-1" style="color:#4C5354;">
+                5:00 pm - 9:00 pm
+              </p>
+            </div> -->
+          </div>
+        </div>
+        <!-- 4th Column: Contact Details -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+          <div class="footer-menu">
+            <h5 class="widget-title fw-semibold" style="color:#1CBCCF;">Contact Details</h5>
+            <ul class="list-unstyled mb-3" style="padding-left:0;">
+              <li class="mb-2 d-flex align-items-center">
+                <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;margin-right:10px;">
+                  <i class="fa-solid fa-envelope" style="color:#1CBCCF; font-size:18px;"></i>
+                </span>
+                <a href="mailto:drrohitpatilmd@gmail.com" style="color:#1CBCCF; text-decoration:underline; word-break:break-all;">drrohitpatilmd@gmail.com</a>
+              </li>
+              <li class="mb-2 d-flex align-items-center">
+                <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;margin-right:10px;">
+                  <i class="fa-solid fa-phone" style="color:#1CBCCF; font-size:18px;"></i>
+                </span>
+                <a href="tel:+917030217272" style="color:#1CBCCF; text-decoration:underline;">+91 70302 17272</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-flex flex-wrap text-center justify-content-center border-top mt-5 py-4 small"
+        style="border-color:#1CBCCF !important;">
+        <p class="mb-2 mb-md-0" style="color:#4C5354;">© 2024 Sattvavajaya Chikitsa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
